@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Generating and Navigating Large Euler Diagrams',
+    title: 'A Retrospective on Diagrammatic Logic',
     subtitle: '',
     //eventInfo: {
     //  title: 'Google I/O',
@@ -23,24 +23,11 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'Aidan Delaney',
-    company: 'University of Brighton, @aidandelaney',
+    company: 'University of Brighton',
     gplus: 'https://plus.google.com/+AidanDelaney/',
     twitter: '@aidandelaney',
     //www: 'http://www.you.com',
     github: 'http://github.com/AidanDelaney'
-  }, {
-      name: 'Eric Kow',
-      company: 'University of Brighton'
-//    gplus: 'http://plus.google.com/1234567890',
-//    twitter: '@yourhandle',
-//    www: 'http://www.you.com',
-//    github: 'http://github.com/you'
-  },{
-      name: 'Peter Chapman'
-      , company: 'University of Brighton'
-  },{
-      name: 'Jon Nicholson'
-      , company: 'University of Brighton'
   }]
 };
 
