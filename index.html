@@ -1,0 +1,522 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+  <script type="text/javascript"
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Overview</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Define the question</li>
+<li>Information seeking</li>
+<li>Generating large diagrams</li>
+<li>Navigating large diagrams</li>
+<li>Future work</li>
+<li>Conclusion</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Define the question</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="A Spider diagram" src="images/intro-sd-eg.svg" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Large Euler Diagrams I</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Let's look at some examples from the literature.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Blake et al.</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Diagram from Blake's orientation experiment" src="images/Blake.svg" /></p>
+<footer class="source">Andrew Blake, Gem Stapleton, Peter Rodgers, Liz Cheek, John Howse: Does the Orientation of an Euler Diagram Affect User Comprehension? DMS 2012</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Rodgers (2014)</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Diagram from Rodgers" src="images/supernationalbodies.png" /></p>
+<footer class="source">Rodgers, P.: A survey of euler diagrams. Journal of Visual Languages and Computing 25, 134–155 (2014)</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Riche & Dwyer (2010)</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Diagram from Riche &amp; Dwyer" src="images/RicheDwyer.png" /></p>
+<footer class="source">Riche, N.H.; Dwyer, T., "Untangling Euler Diagrams," Visualization and Computer Graphics, IEEE Transactions on , vol.16, no.6, 2010</footer></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Large Euler Diagrams II</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Let \(d\) be a diagram displayed on a screen.  If \(d\) is unreadable, then we say that \(d\) is a <em>large</em> diagram.</li>
+<li>This definition suffices as a working definition.</li>
+<li>It allows us to remain abastracted from a discussion on the size or quality of screens.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>More motivation for large Euler Diagrams I</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Howse's work on specification" src="images/PNCC_v3_1.jpg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>More motivation for large Euler Diagrams II</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Howse's work on specification" src="images/RangitikeiCemetery2.svg" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Generating and Navigating Large Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>We wish to generate diagrams that do not comfortably fit on a screen.</li>
+<li>Furthermore, we wish to navigate these diagrams to find information within them.</li>
+<li>At this point we could do with a theory of information seeking.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Information Seeking</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Shneiderman’s information seeking mantra</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>overview first,</li>
+<li>zoom &amp; filter, then</li>
+<li>details-on-demand.</li>
+</ul>
+<p>We'll consider each of the above using a Chess program as an example.</p>
+<footer class="source">Shneiderman, B.: The eyes have it: a task by data type taxonomy for information visualizations. In: Visual Languages, 1996. Proceedings., IEEE Symposium on. pp. 336–343 (Sep 1996)</footer></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Overview first I</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Chess board overview" src="images/overview.png" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Overview first II</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Map overview" src="images/map-overview.png" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Zoom & Filter I</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Chess board Zoom &amp; Filter" src="images/zoomandfilter.png" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Zoom & Filter II</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Map overview" src="images/map-zoom-and-filter.png" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Details-on-Demand I</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Chess board Details-on-demand" src="images/details-on-demand.png" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Details-on-Demand II</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Map overview" src="images/map-details-on-demand.png" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Generating Large Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Manual Generation of Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Howse's SSN diagram" src="images/SSNSolution.svg" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Activity</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>A real world(ish) example</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Draw an Euler diagram describing the following facts:</p>
+<ul>
+<li>A <em>Social Object</em> is not a <em>Physical Object</em>.</li>
+<li>A <em>Sensor</em> is a <em>Physical Object</em>.</li>
+<li>An <em>Observation</em> is a <em>Social Object</em>.</li>
+<li>A <em>Device</em> is a <em>Physical Object</em>.</li>
+<li>A <em>Sensing Device</em> is a <em>Device</em> and is a <em>Sensor</em>.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Automatic Generation of Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>List of Automatic Generation algorithms</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!-- Note here that I've ignored any Venn-diagram only tools, such as the [GNU R VennDiagram](http://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf) package. -->
+
+<ul>
+<li><a href="www.eulerdiagrams.com/inductivecircles.html">iCircles</a> -- As seen in <a href="https://github.com/urbas/speedith">Speedith</a>.<ul>
+<li>G. Stapleton, J. Flower, P. Rodgers and J. Howse. <a href="http://www.cs.kent.ac.uk/pubs/2012/3211/index.html">Automatically Drawing Euler Diagrams with Circles</a>. Journal of Visual Languages and Computing, 23(3):163–193, 2012.</li>
+</ul>
+</li>
+<li><a href="http://www.eulerdiagrams.org/eulerAPE/">EulerAPE</a> -- Also see EulerForce.<ul>
+<li>L. Micallef and P. Rodgers <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0101717">"eulerAPE: Drawing Area-Proportional 3-Venn Diagrams Using Ellipses"</a>, 2014.</li>
+</ul>
+</li>
+<li><a href="http://sysbio.uni-ulm.de/?Software:VennMaster">VennMaster</a><ul>
+<li>H. Kestler, et al. <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/21/8/1592?view=long&amp;pmid=15572472">"Generalized Venn diagrams: a new method of visualizing complex genetic set relations."</a> Bioinformatics 21.8, 2005.</li>
+</ul>
+</li>
+<li><a href="http://isis.dia.unisa.it/projects/vennfs/">VennFS2</a><ul>
+<li>R. De Chiara, U. Erra and V. Scarano, <a href="http://isis.dia.unisa.it/papers/vennfs.pdf">"VENNFS: A Venn-Diagram File Manager"</a> IV, 2003.</li>
+</ul>
+</li>
+<li><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5728808">VennEuler</a><ul>
+<li>L. Wilkinson <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5728808">"Exact and Approximate Area-Proportional Circular Venn and Euler Diagrams"</a>, IEEE Visualization and Computer Graphics, 2012.</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>iCircles</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Demo time</p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Generating (almost) Arbitrarly Large Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Our large diagrams are <em>sparse</em>.</li>
+<li>Diagrams are generated for the purpose of navigating.</li>
+<li>We use iCircles to generate small clusters.</li>
+<li>Then use WebCola to layout the clusters.</li>
+<li>(Note: the prototype is un-demoable).</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>A Large Diagram</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="A large diagram" src="images/clusters.svg" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Navigating Large Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Anchoring the Diagram I</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Grid" src="images/grid.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Anchoring the Diagram II</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Grid" src="images/grid-partial.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Overview</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Zoom &amp; Filter" src="images/clusters-overview.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Zoom & Filter</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Zoom &amp; Filter" src="images/clusters-filter.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Details-on-Demand I</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Zoom &amp; Filter" src="images/details.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Details-on-Demand II</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img width="540px" alt="Zoom &amp; Filter" src="images/details-align.svg" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Future Work & Conclusion</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Future Work</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>This is preliminary work and requires a good prototype implementation.</li>
+<li>We need large real-world datasets to layout (probably biological).</li>
+<li>Comparative studies with other visualisations for large Euler diagrams.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Conclusion</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>We have used Shneiderman’s information visualisation framework to consider how to navigate large Euler diagrams.</li>
+<li>We'd like to think of other ways to navigate large Euler diagrams.</li>
+</ul></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/UoBStar.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+    <p><a href="mailto:aidan@ontologyengineering.org" style="color: black;">aidan@ontologyengineering.org</a></p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+</body>
+</html>
