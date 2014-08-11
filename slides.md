@@ -1,36 +1,147 @@
-title: Overview
+title:
 class: big
-
-- Define the question
-- Information seeking
-- Generating large diagrams
-- Navigating large diagrams
-- Future work
-- Conclusion
+image: images/tardis.jpg
 
 ---
 
-title: Define the question
+title: 
+class: big
+image: images/telefon.png
+
+---
+
+title: Historical
+class: big
+image: images/SchoolOfAthens.jpg
+content_class: flexbox vcenter
+
+---
+
+title: Euclid's Diagrammatic Proof
 subtitle:
+class: big
+image: images/euclid.jpg
+
+---
+
+title: Leonhard Euler
+subtitle:
+class: big
+image: images/Torgau.jpg
+
+---
+
+title: John Venn
+subtitle:
+class: big
+image: images/Everett-Millais.jpg
+
+---
+
+title: Gottlob Frege
+image: images/vanGogh.jpg
+
+---
+
+title: C.S. Peirce
+image: images/Klimt.jpg
+
+---
+
+title:
+image: images/vanderLeck.jpg
+class: big
+build_lists: true
+
+- G&ouml;del
+- Zermelo, Fraenkel, Skolem, Tarski
+- Turing
+
+---
+
+title: Sun-Joo Shin
+image: images/Bacon.jpg
+
+---
+
+title: Modern Developments
+image: images/Banksy.jpg
+class: big
+
+- Brighton
+    * Stuart Kent
+    * John Howse
+    * Gem Stapleton
+- Kent
+    * Yossi Gil
+    * Simon Thompson
+    * Peter Rodgers
+
+---
+
+title: Recap
 class: segue dark nobackground
 
 ---
 
 title: Euler Diagrams
+content_class: flexbox vcenter big
+
+Visualise the relationship between sets.
+
+![Euler diagrams](images/euler-eg-pg122.png)
+
+---
+
+title: Venn Diagrams
+content_class: flexbox vcenter big
+
+<blockquote style="font-size:16pt;">
+The [diagrammatic scheme] here offered may be said to underlie Boole's method, and to be the appropriate diagrammatic representation for it.
+</blockquote>
+
+![A Venn diagram](images/syllogism-mortals-venn-diagram.svg)
+
+---
+
+title: Modern Euler Diagrams
 content_class: flexbox vcenter
 
-![A Spider diagram](images/intro-sd-eg.svg)
+![An Euler diagram](images/syllogism-mortals-euler-box-diagram.svg)
 
 ---
 
-title: Large Euler Diagrams I
+title: Properties of Euler Diagrams
 class: big
 
-- Let's look at some examples from the literature.
+- WISWYG
+    * 1-to-1 mapping between contous and the sets that they represent.
+- Free Rides (Shimojima, 1999)
+    * Philosophers are not Mortal!
+
+    <footer class="source">Atsushi Shimojima, Derivative Meaning in Graphical Representations, IEEE VL, 1999.</footer>
+---
+
+title: Syllogistic Reasoning using Euler Diagrams
+class: big
+
+- The major premise ``No mortals are philosophers'' is represented by the contour denoting ``Mortals'' being disjoint from the contour denoting ``Philosophers''.
+- The minor premise ``Every Athenian is mortal'' is represented by the containment of the contour denoting ``Athenians'' within the contour denoting ``Mortals''.
+- The conclusion ``Therefore no philosopher is Athenian'' is clear due to the contours denoting ``Athenians'' and denoting ``Philosophers'' being disjoint.
 
 ---
 
-title: Blake et al.
+title: Syllogistic Reasoning
+class: big
+
+- Diagrams can assist in Syllogistic reasoning (Sato et al, 2010).
+- Are we reasoning using diagrams or sententially?
+
+<footer class="source">Yuri Sato and Koji Mineshima and Ryo Takemura, The Efficacy of Euler and Venn Diagrams in Deductive Reasoning: Empirical Findings, Diagrams, 2010.</footer>
+
+---
+
+title: Spider Diagrams
 content_class: flexbox vcenter
 
 ![Diagram from Blake's orientation experiment](images/Blake.svg)
