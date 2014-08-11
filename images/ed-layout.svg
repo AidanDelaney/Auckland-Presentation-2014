@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-91.1429 -80.6429 181 157">
+<!-- Source code to generate this instance:
+#include <vector>
+#include <utility>
+#include "libcola/cola.h"
+using namespace cola;
+int main(void) {
+    CompoundConstraints ccs;
+    std::vector<Edge> es;
+    EdgeLengths eLengths;
+    double defaultEdgeLength=10;
+    std::vector<vpsc::Rectangle*> rs;
+    vpsc::Rectangle *rect = NULL;
+
+    rect = new vpsc::Rectangle(34.8571, 39.8571, 12.3571, 17.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(-3.64286, 1.35714, 21.3571, 26.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(27.8571, 32.8571, 5.35714, 10.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(4.85714, 9.85714, -3.64286, 1.35714);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(-34.1429, -29.1429, -12.6429, -7.64286);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(13.8571, 18.8571, 12.3571, 17.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(-11.4762, -6.47619, -21.6429, -16.6429);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(-41.1429, -36.1429, -30.6429, -25.6429);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(20.8571, 25.8571, 21.3571, 26.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(3.35714, 8.35714, 21.3571, 26.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(-20.4762, -15.4762, 21.3571, 26.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(20.8571, 25.8571, 5.35714, 10.3571);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(4.85714, 9.85714, -21.6429, -16.6429);
+    rs.push_back(rect);
+
+    rect = new vpsc::Rectangle(-20.4762, -15.4762, -30.6429, -25.6429);
+    rs.push_back(rect);
+
+
+    ConstrainedFDLayout alg(rs, es, defaultEdgeLength, true, eLengths);
+    RootCluster *cluster39031368 = new RootCluster();
+    cluster39031368->addChildNode(0);
+    RectangularCluster *cluster39031840 = new RectangularCluster();
+    cluster39031840->setPadding(Box(2));
+    cluster39031840->addChildNode(1);
+    cluster39031840->addChildNode(8);
+    cluster39031840->addChildNode(9);
+    cluster39031840->addChildNode(10);
+    cluster39031368->addChildCluster(cluster39031840);
+    RectangularCluster *cluster39032384 = new RectangularCluster();
+    cluster39032384->setPadding(Box(2));
+    cluster39032384->addChildNode(2);
+    cluster39032384->addChildNode(8);
+    cluster39032384->addChildNode(11);
+    cluster39031368->addChildCluster(cluster39032384);
+    RectangularCluster *cluster39032928 = new RectangularCluster();
+    cluster39032928->setPadding(Box(2));
+    cluster39032928->addChildNode(3);
+    cluster39032928->addChildNode(9);
+    cluster39032928->addChildNode(12);
+    cluster39031368->addChildCluster(cluster39032928);
+    RectangularCluster *cluster39033472 = new RectangularCluster();
+    cluster39033472->setPadding(Box(2));
+    cluster39033472->addChildNode(4);
+    cluster39033472->addChildNode(10);
+    cluster39033472->addChildNode(13);
+    cluster39031368->addChildCluster(cluster39033472);
+    RectangularCluster *cluster39034016 = new RectangularCluster();
+    cluster39034016->setPadding(Box(2));
+    cluster39034016->addChildNode(5);
+    cluster39034016->addChildNode(11);
+    cluster39031368->addChildCluster(cluster39034016);
+    RectangularCluster *cluster39034560 = new RectangularCluster();
+    cluster39034560->setPadding(Box(2));
+    cluster39034560->addChildNode(6);
+    cluster39034560->addChildNode(12);
+    cluster39031368->addChildCluster(cluster39034560);
+    RectangularCluster *cluster39035104 = new RectangularCluster();
+    cluster39035104->setPadding(Box(2));
+    cluster39035104->addChildNode(7);
+    cluster39035104->addChildNode(13);
+    cluster39031368->addChildCluster(cluster39035104);
+    alg.setClusterHierarchy(cluster39031368);
+    alg.setConstraints(ccs);
+    alg.makeFeasible();
+    alg.run();
+};
+-->
+<g inkscape:groupmode="layer" inkscape:label="Clusters">
+<rect id="cluster-39031840-r" x="-22.4762" y="19.3571" width="50.3333" height="9" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+<rect id="cluster-39032384-r" x="18.8571" y="3.35714" width="16" height="25" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+<rect id="cluster-39032928-r" x="1.35714" y="-23.6429" width="10.5" height="52" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+<rect id="cluster-39033472-r" x="-36.1429" y="-32.6429" width="22.6667" height="61" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+<rect id="cluster-39034016-r" x="11.8571" y="3.35714" width="16" height="16" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+<rect id="cluster-39034560-r" x="-13.4762" y="-23.6429" width="25.3333" height="9" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+<rect id="cluster-39035104-r" x="-43.1429" y="-32.6429" width="29.6667" height="9" style="stroke-width: 1px; stroke: black; fill: green; fill-opacity: 0.3;" rx="4" ry="4" />
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Rects">
+<rect id="rect-0" x="34.8571" y="12.3571" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-1" x="-3.64286" y="21.3571" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-2" x="27.8571" y="5.35714" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-3" x="4.85714" y="-3.64286" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-4" x="-34.1429" y="-12.6429" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-5" x="13.8571" y="12.3571" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-6" x="-11.4762" y="-21.6429" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-7" x="-41.1429" y="-30.6429" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-8" x="20.8571" y="21.3571" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-9" x="3.35714" y="21.3571" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-10" x="-20.4762" y="21.3571" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-11" x="20.8571" y="5.35714" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-12" x="4.85714" y="-21.6429" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+<rect id="rect-13" x="-20.4762" y="-30.6429" width="5" height="5" style="stroke-width: 1px; stroke: black; fill: blue; fill-opacity: 0.3;" />
+</g>
+<g inkscape:groupmode="layer" inkscape:label="Edges">
+</g>
+</svg>
