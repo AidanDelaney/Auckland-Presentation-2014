@@ -282,6 +282,14 @@ h2 {
   line-height: 45px;
   letter-spacing: -2px;
   color: $gray-4;
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
+  border-radius:20px;
+  border: 10px #000;
+  background-color: rgba(255,255,255,0.8);
+  padding-left: 2em;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
 }
 
 h3 {
@@ -812,6 +820,7 @@ article.smaller {
   h2 {
     color: $gray-1;
     font-size: 60px;
+    background: none;
   }
   h3 {
     color: $gray-1;
