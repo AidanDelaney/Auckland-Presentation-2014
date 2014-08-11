@@ -49,7 +49,7 @@ def parse_metadata(section):
 def postprocess_html(html, metadata):
   """Returns processed HTML to fit into the slide template format."""
 
-  html = html.replace('<img', '<img width="540px"')
+  html = html.replace('<img', '<img style="width:640px"')
 
   if metadata.get('build_lists') and metadata['build_lists'] == 'true':
     html = html.replace('<ul>', '<ul class="build">')
