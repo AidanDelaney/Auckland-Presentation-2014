@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'A Retrospective on Diagrammatic Logic',
+    title: 'Reasoning with Diagrams',
     subtitle: '',
     //eventInfo: {
     //  title: 'Google I/O',
