@@ -48,7 +48,7 @@ image: images/Klimt.jpg
 
 ---
 
-title:
+title: And Then...
 image: images/vanderLeck.jpg
 class: big
 build_lists: true
@@ -68,38 +68,41 @@ title: Modern Developments
 image: images/Banksy.jpg
 class: big
 
-<div class="columns-2">
-
+<table>
+ <tr>
+ <td>
  <ul>
- <li>Brighton</li>
+ <li>Brighton
     <ul>
     <li>John Howse</li>
     <li>John Taylor</li>
     <li>Gem Stapleton</li>
-    </ul>
- <li>Kent</li>
+    </ul></li>
+ <li>Kent
     <ul>
     <li>Stuart Kent</li>
     <li>Simon Thompson</li>
     <li>Peter Rodgers</li>
-    </ul>
+    </ul></li>
  </ul>
-
+ </td>
+ <td>
  <ul>
-  <li>Stanford</li>
+  <li>Stanford
     <ul>
       <li>Nik Swoboda</li>
       <li>Gerard Allwein</li>
       <li>Jon Barwise</li>
       <li>Dave Barker-Plummer</li>
-    </ul>
-  <li>Technion</li>
+    </ul></li>
+  <li>Technion
     <ul>
       <li>Yossi Gil</li>
-    </ul>
-  </ul>
-
-</div>
+    </ul></li>
+ </ul>
+ </td>
+ </tr>
+</table>
 ---
 
 title: Recap
@@ -163,6 +166,21 @@ class: big
 - Are we reasoning using diagrams or sententially?
 
 <footer class="source">Yuri Sato and Koji Mineshima and Ryo Takemura, The Efficacy of Euler and Venn Diagrams in Deductive Reasoning: Empirical Findings, Diagrams, 2010.</footer>
+
+---
+
+title: Reasoning about Software Architecture
+class: big
+content_class: flexbox vcenter
+
+![A constraint diagram](images/constraint-diagram.svg)
+
+<footer class="source">Stuart Kent, Constraint Diagrams: Visualizing Invariants in Object Oriented Modelling, OOPSLA, 1997.</footer>
+
+---
+
+title: Diagrammatic Reasoning
+class: segue dark nobackground
 
 ---
 
@@ -299,3 +317,21 @@ class: big
     * second order spider diagrams,
     * generalised constraint diagrams, and
     * any non-Brighton work on visual logic.
+
+---
+
+title: Conclusion
+class: big
+
+- Spider Diagrams are a weakly expressive sound and complete diagrammatic reasoning system.
+- Concept Diagrams are a practical expressive diagrammatic reasoning system.
+- All of which are originally motivated by Kent, 1997, constraint diagrams.
+
+<footer class="source">Stuart Kent, Constraint Diagrams: Visualizing Invariants in Object Oriented Modelling, OOPSLA, 1997.</footer>
+
+---
+
+title: Work in Progress
+content_class: flexbox vcenter
+
+<video src="videos/conceptdiagram-screencast.mp4" controls width="720px" />
