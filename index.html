@@ -1,0 +1,632 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auckland Talk 2014</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/io2013.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+  <script type="text/javascript"
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="big" style="background-image: url(images/tardis.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/telefon.png);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/SchoolOfAthens.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>Historical</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/euclid.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>Euclid's Diagrammatic Proof</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/Torgau.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>Leonhard Euler</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/Everett-Millais.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>John Venn</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ></article>
+ 
+</slide>
+
+<slide  style="background-image: url(images/vanGogh.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>Gottlob Frege</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ></article>
+ 
+</slide>
+
+<slide  style="background-image: url(images/Klimt.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>C.S. Peirce</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/vanderLeck.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>And Then...</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul class="build">
+<li>G&ouml;del</li>
+<li>Zermelo, Fraenkel, Skolem, Tarski</li>
+<li>Turing</li>
+</ul></article>
+ 
+</slide>
+
+<slide  style="background-image: url(images/Bacon.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>John Sowa & Sun-Joo Shin</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" style="background-image: url(images/Banksy.jpg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>Modern Developments</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><table>
+ <tr>
+ <td>
+ <ul>
+ <li>Brighton
+    <ul>
+    <li>John Howse</li>
+    <li>John Taylor</li>
+    <li>Gem Stapleton</li>
+    </ul></li>
+ <li>Kent
+    <ul>
+    <li>Stuart Kent</li>
+    <li>Simon Thompson</li>
+    <li>Peter Rodgers</li>
+    </ul></li>
+ </ul>
+ </td>
+ <td>
+ <ul>
+  <li>Stanford
+    <ul>
+      <li>Nik Swoboda</li>
+      <li>Gerard Allwein</li>
+      <li>Jon Barwise</li>
+      <li>Dave Barker-Plummer</li>
+    </ul></li>
+  <li>Technion
+    <ul>
+      <li>Yossi Gil</li>
+    </ul></li>
+ </ul>
+ </td>
+ </tr>
+</table></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    
+      <hgroup class="auto-fadein">
+        <h2>Recap</h2>
+        <h3></h3>
+      </hgroup>
+    
+  
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter big"><p>Visualise the relationship between sets.</p>
+<p><img style="width:640px" alt="Euler diagrams" src="images/euler-eg-pg122.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Venn Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter big"><blockquote style="font-size:16pt;">
+"The [diagrammatic scheme] here offered may be said to underlie Boole's method, and to be the appropriate diagrammatic representation for it." (Venn, 1880)
+</blockquote>
+
+<p><img style="width:640px" alt="A Venn diagram" src="images/syllogism-mortals-venn-diagram.svg" /></p>
+<footer class="source">John Venn, On the diagrammatic and mechanical representation of propositions and reasonings, Dublin Philosophical Magazine and Journal of Science, 1880.</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Modern Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="An Euler diagram" src="images/syllogism-mortals-euler-box-diagram.svg" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Properties of Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>WISWYG<ul>
+<li>1-to-1 mapping between contous and the sets that they represent.</li>
+</ul>
+</li>
+<li>Free Rides (Shimojima, 1999)<ul>
+<li>Philosophers are not Mortal!</li>
+</ul>
+</li>
+</ul>
+<footer class="source">Atsushi Shimojima, Derivative Meaning in Graphical Representations, IEEE VL, 1999.</footer></article>
+ 
+</slide>
+
+<slide class="med" >
+  
+    
+    <hgroup>
+      <h2>Syllogistic Reasoning using Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>The major premise "No mortals are philosophers" is represented by the contour denoting "Mortals" being disjoint from the contour denoting "Philosophers''.</li>
+<li>The minor premise "Every Athenian is mortal" is represented by the containment of the contour denoting "Athenians" within the contour denoting "Mortals''.</li>
+<li>The conclusion "Therefore no philosopher is Athenian" is clear due to the contours denoting "Athenians" and denoting "Philosophers" being disjoint.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Syllogistic Reasoning</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Diagrams can assist in Syllogistic reasoning (Sato et al, 2010).</li>
+<li>Are we reasoning using diagrams or sententially?</li>
+</ul>
+<footer class="source">Yuri Sato and Koji Mineshima and Ryo Takemura, The Efficacy of Euler and Venn Diagrams in Deductive Reasoning: Empirical Findings, Diagrams, 2010.</footer></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Reasoning about Software Architecture</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="A constraint diagram" src="images/constraint-diagram.svg" /></p>
+<footer class="source">Stuart Kent, Constraint Diagrams: Visualizing Invariants in Object Oriented Modelling, OOPSLA, 1997.</footer></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    
+      <hgroup class="auto-fadein">
+        <h2>Diagrammatic Reasoning</h2>
+        <h3></h3>
+      </hgroup>
+    
+  
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Spider Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="A unitary Spider Diagram" src="images/intro-sd-eg.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Spider Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="A Spider Diagram" src="images/intro-sd-eg-split-spiders.svg" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Diagrammatic Reasoning</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Spider Diagram reasoning system is sound and complete (Howse et al., 2005)</li>
+<li>Previous examples show an application of the "split spiders" rule.</li>
+</ul>
+<footer class="source">John Howse, Gem Stapleton and John Taylor, "Spider Diagrams", London Mathematical Soc, 2005.</footer></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Intuition into Completeness Proof</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Each diagram has a minimal unique normal form.</li>
+<li>Given two diagrams \(D_1\) and \(D_2\) we<ul>
+<li>add all contours to each,</li>
+<li>add all missing zones to each,</li>
+<li>split all the spiders,</li>
+<li>combine expressions.</li>
+</ul>
+</li>
+<li>Similar to proof strategy by Molina, 2000.</li>
+<li>Purely an application of diagrammatic rules.</li>
+</ul>
+<p><footnote class="source">John Howse, Fernando Molina and John Taylor, "SD2: A sound and complete diagrammatic reasoning system", IEEE VL, 2000.</footnote></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Expressiveness of Spider Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="big"><p>Spider Diagrams are as expressive as:</p>
+<ul>
+<li>monadic first order logic with equality (Howse, 2005).</li>
+<li>commutative star-free regular languages (Delaney et al., 2013).</li>
+<li>Spider Diagrams are weakly expressive.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Reasoning Example</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="Diagram from Rodgers" src="images/supernationalbodies.png" /></p>
+<footer class="source">Rodgers, P.: A survey of euler diagrams. Journal of Visual Languages and Computing 25, 134–155 (2014)</footer></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    
+      <hgroup class="auto-fadein">
+        <h2>Expressive Diagrammatic Reasoning</h2>
+        <h3></h3>
+      </hgroup>
+    
+  
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Motivation for Expressive Diagrammatic Reasoning</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="Howse's work on specification" src="images/RangitikeiCemetery2.svg" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>A Software Engineering Example</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="Howse's SSN diagram" src="images/SSNSolution.svg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Concept Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><p><img style="width:640px" alt="A Concept Diagram" src="images/concept-diagram-eg.svg" /></p></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Concept Diagrams Expressiveness</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Concept Diagrams are at least as expressive as \(\mathcal{SHOIN}\).</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/UoBStar.png"></aside>
+    
+      <hgroup class="auto-fadein">
+        <h2>Future Work & Conclusion</h2>
+        <h3></h3>
+      </hgroup>
+    
+  
+</slide>
+
+<slide class="big" style="background-image: url(images/ed-layout.svg);background-repeat: no-repeat;background-size: cover;">
+  
+    
+    <hgroup>
+      <h2>Future Work on Euler Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Layout is an unsolved problem.</li>
+<li>Preference and Efficacy is currently being studied.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Future Work on Spider Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Linking Spider Diagrams of Order and LTL</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Future Work on Concept Diagrams</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Tie down expressiveness result.</li>
+<li>More work on patterns.</li>
+<li>Prototype implementation.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Conclusion</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>We have considered some of the work on Euler diagram based logics over the past 20 years.</li>
+<li>Fully formal (but usable) diagrammatic reasoning systems.</li>
+<li>For this talk I've ignored interesting work on<ul>
+<li>diagram layout,</li>
+<li>diagram comprehension,</li>
+<li>spider diagrams of order,</li>
+<li>second order spider diagrams,</li>
+<li>generalised constraint diagrams, and</li>
+<li>any non-Brighton work on visual logic.</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    
+    <hgroup>
+      <h2>Conclusion</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article ><ul>
+<li>Spider Diagrams are a weakly expressive sound and complete diagrammatic reasoning system.</li>
+<li>Concept Diagrams are a practical expressive diagrammatic reasoning system.</li>
+<li>All of which are originally motivated by Kent, 1997, constraint diagrams.</li>
+</ul>
+<footer class="source">Stuart Kent, Constraint Diagrams: Visualizing Invariants in Object Oriented Modelling, OOPSLA, 1997.</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    
+    <hgroup>
+      <h2>Work in Progress</h2>
+      <h3></h3>
+    </hgroup>
+    
+    <article class="flexbox vcenter"><video src="videos/conceptdiagram-screencast.mp4" controls width="720px" /></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/UoBStar.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+    <p><a href="mailto:aidan@ontologyengineering.org" style="color: black;">aidan@ontologyengineering.org</a></p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+</body>
+</html>
